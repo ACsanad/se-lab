@@ -19,6 +19,7 @@ public class TorpedoStore {
   public TorpedoStore(int numberOfTorpedos){
     this.torpedoCount = numberOfTorpedos;
 
+    //random comment goes brrrrr
     // update failure rate if it was specified in an environment variable
     String failureEnv = System.getenv("IVT_RATE");
     if (failureEnv != null){
@@ -33,6 +34,7 @@ public class TorpedoStore {
   public boolean fire(int numberOfTorpedos){
     if(numberOfTorpedos < 1 || numberOfTorpedos > this.torpedoCount){
       throw new IllegalArgumentException("numberOfTorpedos");
+      //trivial indeed
       
     }
 
